@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin:0;
+    padding:0;
+}
+#dogpage{
+    width:100%;
+    background-color: #000000;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "top top top ""t1 t1 t1""m-top m-top m-top" "middle-left middle-middle middle-right" "bottom bottom bottom";
+    background-repeat: no-repeat;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 2em;
+
+}
+body{
+    width:100%;
+    background-color: #000000;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "top top top " "t1 t1 t1""middle-left middle-middle middle-right" "bottom bottom bottom";
+    background-repeat: no-repeat;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 2em;
+}
+body a{
+    color:white;
+
+}
+#hob_page, #edu section img{
+    max-width: 100%;
+}
+
+header{
+    width:100%;
+    background-color: rgba(0,0,0, .5);
+    color:white;
+    font-size: 5px;
+    position:fixed;
+    align-items: center;
+    display: inline;
+    grid-area: top;
+    padding-right: 1em;
+    height:12em;
+    z-index: +3;
+    max-height:100%;
+
+
+}
+#hob_page
+#edu section ul{
+    margin-left: 2em;
+}
+header figure{
+    text-align: center;
+    position: absolute;
+    left: 1%;
+    top:1%;
+
+}
+header img{
+    animation: spin 2s linear;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8em;
+}
+body section{
+    margin: auto;
+    margin-top: 8em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid white;
+    width: 85%;
+    border-radius: 2em;
+    padding: 1em;
+    grid-area: middle-left;
+}
+body section img{
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+section li{
+    text-align: left;
+
+}
+body section~section+section{
+    grid-area: middle-right;
+}
+body section+section{
+    grid-area: middle-middle;
+}
+header a{
+    text-decoration: none;
+    list-style:none;
+    font-size: 5em;
+    border: 0 solid black;
+    padding: .89em;
+    align-items: center;
+
+}
+header li{
+    padding-top: 2em;
+    list-style:none;
+    animation: fade-in linear 2s;
+}
+header a:hover{
+    color: black;
+    background-color: white;
+
+}
+p+h1{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 4em;
+    color:white;
+    padding: .5em;
+}
+nav figure{
+    padding-right: 185em;
+    padding-left: 4em;
+}
+footer{
+    font-size: 2em;
+    height:13em;
+    width:100%;
+    color:white;
+    background-color: white;
+    text-align: center;
+    background-image: url("Images/back.jpg") ;
+    grid-area: bottom;
+    margin-top: fill;
+    z-index: -2;
+
+}
+section p {
+    text-align: left;
+    font-size: 1.3em;
+    padding: 1em;
+
+}
+#hob_page section img{
+    border: 1px solid white;
+}
+/*Image slider*/
+.slider{
+    
+    text-align: center;
+    margin: auto;
+    width:40em;
+    max-width: 100%;
+    border: 2px solid white;
+    height:29em;
+    border-radius: 2em;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    grid-area: m-top;
+    padding: 0;
+}
+.slider li{
+    float: left;
+    width: 40em;
+    height: 29em;
+}
+/*holder for all images in slideshow, only visible when inside the container*/
+.holder{
+    width: 200em;
+    animation: slide 10s infinite linear;
+}
+
+
+#slide-0{
+    background-image: url("Images/pets1.png");
+    max-width: 100%;
+}
+
+#slide-1{
+    background-image: url("Images/pets3.png");
+    max-width: 100%;
+}
+#slide-2{
+    background-image: url("Images/tanya1.JPG");
+    max-width: 100%;
+}
+#slide-3{
+    background-image: url("Images/coleen1.JPG");
+    max-width: 100%;
+}
+#slide-4{
+    background-image: url("Images/junior1.JPG");
+    max-width: 100%;
+}
+.slider~section{
+    border: 2px solid white;
+    width: 90%;
+    margin:auto;
+    margin-top: 2em;
+    border-radius: 2em;
+    padding: 1em;
+}
+.slider~section ul{
+    padding-left: 1em;
+    text-align: left;
+    list-style: none;
+}
+.slider + section{
+    text-align: center;
+    color:white;
+    grid-area: middle-left;
+}
+.slider~section+section{
+    text-align: center;
+    color:white;
+    grid-area: middle-middle;
+
+}
+.slider~section~section+section{
+    text-align: center;
+    color:white;
+    grid-area: middle-right;
+}
+#hob_page section{
+    margin:auto;
+    margin-top: 2em;
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    border: 2px solid white;
+    width: 85%;
+    border-radius: 2em;
+    padding: 1em;
+    grid-area: middle-left;
+}
+#hob_page #muaythai+section{
+    grid-area: middle-middle;
+}
+#hob_page #game{
+    grid-area: middle-right;
+}
+#edu section{
+    margin-top:2em;
+}
+#dogpage section li{
+    list-style:none;
+    margin:auto;
+    
+}
+@media screen and (max-width: 80em){
+    .slider{display:none;}
+    #hob_page, #edu{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: "top top" "t1 t1""middle-left middle-right" "bottom-top bottom-top" "bottom bottom";
+    }
+    #hob_page header li{
+        margin-top:2em;
+    }
+    #hob_page #rock + section{
+        grid-area:bottom-top;
+        width:50%;
+    }
+    #edu header li{
+        margin-top:2em;
+    }
+    #dogpage header li{
+        margin-top:2em;
+    }
+    header{
+        grid-area: top;
+        position:static;
+    }
+    header a{
+    padding: .4em;
+    align-items: center;
+
+    }
+    footer{
+        grid-area:bottom;
+        z-index: 1;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right:0;
+
+    }
+    li+li{
+        padding: 0.4em;
+    }
+    header li{
+        padding: 0.4em;
+    }
+
+    nav figure{
+    padding: 0;
+    }
+    #hob_page section{
+        grid-area: middle-left;
+        margin-top: 2em;
+    }
+    #edu section{
+        grid-area: middle-left;
+        margin-top: 3em;
+    }
+    #hob_page #muaythai +section{
+        grid-area: middle-right;
+    }
+    #edu section+section{
+        grid-area: middle-right;
+    }
+    #game{
+        grid-area: bottom-top;
+        width:50%;
+    }
+    #edu section~section+section{
+        grid-area: bottom-top;
+        margin-top: 2em;
+
+    }
+    #dogpage{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto/;
+        grid-template-areas: "top top" "t1 t1" "m1 m2" "b1 b1" "bottom bottom";
+    }
+    #dogpage header~h1{
+        grid-area:t1;
+        margin-top:8em;
+        text-align:center;
+    
+    }
+    #hob_page header~h1{
+        grid-area:t1;
+        margin-top:8em;
+        text-align:center;
+        
+    }
+    #edu header+h1{
+        grid-area:t1;
+        margin-top:8em;
+        text-align:center;
+        color: white;
+        margin:auto;
+        margin-top:6em;
+        
+    }
+    #dogpage section{
+        grid-area:m1;
+        margin-top:2em;
+        
+    }
+    #dogpage section+section {
+        grid-area:m2;
+    }
+    #dogpage section~section+section {
+        grid-area:b1;
+        width:50%;
+    }
+}
+@media screen and  (max-width:50em) {
+    #hob_page #rock + section{
+        width:85%;
+    }
+    #hob_page header li{
+        margin-top:3em;
+    }
+    #hob_page header~p+h1{
+        grid-area:t1;
+        margin-top:1em;
+        text-align:center;
+    }
+    #edu section{
+        margin-top:2em;
+    }
+    #dogpage header~p+h1{
+        grid-area:t1;
+        margin-top:1em;
+        text-align:center;
+    }
+    #edu header li{
+        margin-top:3em;
+    }
+    #dogpage header li{
+        margin-top:3em;
+    }
+    .slider{display:none;}
+    #hob_page{
+        display: inline;
+    }
+    #edu{
+        display:inline;
+    }
+    #dogpage{
+        display:inline;
+    }
+    #edu header~p+h1{
+        margin-top:2em;
+    }
+     section #game{
+        width:85%;
+        margin:auto;
+        margin-top:2em;
+    }
+    #dogpage section~section+section{
+        width: 85%;
+        margin:auto;
+        margin-top:2em;
+    }
+    header{
+        position:static;
+    }
+    .slider{
+        height:20em;
+    }
+    .slider li{
+        height:20em;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li+li{
+        padding: 0.4em;
+    }
+    header li{
+        padding: 0.4em;
+    }
+    aside{
+        margin-top: 1em;
+        display: block;
+        height:8em;
+        width:60%;
+    }
+    #profile{
+        margin-top:8em;
+        display: block;
+        height:32em;
+    }
+    nav figure{
+    padding: 0;
+
+    }
+    #hob_page section{
+        margin-top: 2em;
+        color: white;
+        text-align: center;
+        font-size: .8em;
+    }
+    #hob_page, #edu section~section{
+        margin-top:2em;
+    }
+
+}
+
+@keyframes spin {
+from{transform: rotateY(0deg);}
+    to{transform: rotateY(360deg);}
+}
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0em);
+    }
+    5%{
+        transform: translateX(-20%);
+    }
+
+    10%{
+        transform: translateX(-20%);
+    }
+    15%{
+        transform: translateX(-20%);
+    }
+    20% {
+        transform: translateX(-20%);
+    }
+    25%{
+        transform: translateX(-40%);
+    }
+    30%{
+        transform: translateX(-40%);
+    }
+    35%{
+        transform: translateX(-40%);
+    }
+    40% {
+        transform: translateX(-40%);
+    }
+    45%{
+        transform: translateX(-60%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    55%{
+        transform: translateX(-60%);
+    }
+    60% {
+        transform: translateX(-60%);
+    }
+    65%{
+        transform: translateX(-80%);
+    }
+    70% {
+        transform: translateX(-80%);
+    }
+    75%{
+        transform: translateX(-80%);
+    }
+    80% {
+        transform: translateX(-80%);
+    }
+    85%{
+        transform: translateX(0em);
+    }
+    90% {
+        transform: translateX(0em);
+
+    }
+
+}
