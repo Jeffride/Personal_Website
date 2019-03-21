@@ -1,4 +1,5 @@
 # Website2
+http://jeffattride.me/
 A new website that incorporates media queries which improves accessibility for phone and tablet users 
 ![website_screenshot](https://user-images.githubusercontent.com/43136483/54752569-86e8d080-4bd6-11e9-9016-1f272fa92df0.png)
 ![screenshot2](https://user-images.githubusercontent.com/43136483/54752703-f8288380-4bd6-11e9-88af-4bb976e69c34.png)
