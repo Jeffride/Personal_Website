@@ -1,18 +1,32 @@
 <!DOCTYPE html>
+<link href="otherPages.css" rel="stylesheet">
 <html lang="en">
 <head>
-<link href="otherPages.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Education</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Attride</title>
+    <script>
+
+    function showmenu(x,y,z) {
+      document.getElementById("menu").style.display=x;
+      document.getElementById("frst").style.marginTop=y;
+      document.getElementById("burger").style.display=z;
+      document.getElementById("xicon").style.display=x;
+
+
+    }
+
+    </script>
 </head>
-<body id = "edu">
+<body id="edu">
   <header>
         <figure><img src="Images/logo1.png" alt="a logo depicting jeff attride's initials "/></figure>
+        <img src="Images/burger.png" onclick="showmenu('flex','18em','none');"id="burger"/>
+        <img src="Images/grey_x.png" onclick="showmenu('none','5em','flex');"id="xicon"/>
 
 
-        <nav>
-            <ul>
+        <nav id="nv">
+            <ul id="menu">
 
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="edu.html">Education</a></li>
@@ -23,10 +37,9 @@
         </nav>
 
     </header>
-      <p><h1>My Education</h1></p>
-    <section>
+    <section id="frst">
         <h1>Leighlinbridge National School</h1>
-        <img src="Images/leighlinbridge.jpg" alt = "an image of my primary school located in leighlinbridge Carlow"/>
+        <img src="Images/leighlinbridge.jpg">
         <p>
             I attended primary school in a local village, my primary school was relatively
             small and so I knew almost everyone in the school,
@@ -35,7 +48,7 @@
     </section>
     <section>
         <h1>Presentation De La Salle Secondary School</h1>
-        <img src="Images/pres.jpg" alt = "an image of my secondary school, Presentation De La Salle College Bagenalstown.">
+        <img src="Images/pres.jpg">
         <p>
 
             During my six years in secondary school I gained an array of knowledge in
@@ -55,7 +68,7 @@
     </section>
     <section>
         <h1>University College Cork</h1>
-        <img src="Images/ucc.jpg" alt = "an image of UCC, which is currently where I am studying.">
+        <img src="Images/ucc.jpg">
         <p>
         I am currently studying computer science in UCC, I knew since my 4th year in
         secondary school that I wanted to do computer science as I have always held a fascination in

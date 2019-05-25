@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Pets</title>
     <link href="otherPages.css" rel="stylesheet">
+    <script>
+
+    function showmenu(x,y,z) {
+      document.getElementById("menu").style.display=x;
+      document.getElementById("frst").style.marginTop=y;
+      document.getElementById("burger").style.display=z;
+      document.getElementById("xicon").style.display=x;
+
+
+    }
+
+    </script>
 </head>
 <body id="dogpage">
  <header>
         <figure><img src="Images/logo1.png" alt="a logo depicting jeff attride's initials "/></figure>
+        <img src="Images/burger.png" onclick="showmenu('flex','15em','none');"id="burger"/>
+        <img src="Images/grey_x.png" onclick="showmenu('none','5em','flex');"id="xicon"/>
 
 
-        <nav>
-            <ul>
+        <nav id="nv">
+            <ul id="menu">
 
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="edu.html">Education</a></li>
@@ -25,27 +39,34 @@
     </header>
 
     <p><h1>My Pets</h1></p>
-        
+        <section class="slider">
+            <ul class="holder">
+                <li id="slide-0"><a href = "https://www.ucc.ie/"></a></li>
+                <li id="slide-1"></li>
+                <li id="slide-2"></li>
+            </ul>
 
-        <section>
+        </section>
+
+        <section id="frst">
             <h1>Tanya</h1>
             <img src = "Images/tanya2.JPG"/>
-                <ul>
-                    <li>
-                        <strong>Age:</strong>
-                        4
-                    </li>
-                    <li>
-                        <strong>Breed: </strong>
-                        Samoyed
-                    </li>
-                    <li>
-                        <strong>Info: </strong>
-                        Tanya is a pure-bred samoyed,
-                        this is a working breed from Syberia where
-                        they are used to pull sleighs among other duties,
-                        for more info on this breed <a href = "https://en.wikipedia.org/wiki/Samoyed_dog"> click here.</a>
-                    </li>
+            <ul>
+                <li>
+                    <strong>Age:</strong>
+                    4
+                </li>
+                <li>
+                    <strong>Breed: </strong>
+                    Samoyed
+                </li>
+                <li>
+                    <strong>Info: </strong>
+                    Tanya is a pure-bred samoyed,
+                    this is a working breed from Syberia where
+                    they are used to pull sleighs among other duties,
+                    for more info on this breed click here.
+                </li>
             </ul>
         </section>
         <section>
@@ -84,19 +105,6 @@
                 </li>
             </ul>
         </section>
-        <section class="slider">
-            <ul class="holder">
-                <li id="slide-0"></li>
-                <li id="slide-1"></li>
-                <li id="slide-2"></li>
-                <li id="slide-3"></li>
-                <li id="slide-4"></li>
-               
-                
-            </ul>
-
-        </section>
-        
 
 <footer></footer>
 

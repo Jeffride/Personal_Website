@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
+    <title>My Pets</title>
     <link href="otherPages.css" rel="stylesheet">
+    <script>
+
+    function showmenu(x,y,z) {
+      document.getElementById("menu").style.display=x;
+      document.getElementById("muaythai").style.marginTop=y;
+      document.getElementById("burger").style.display=z;
+      document.getElementById("xicon").style.display=x;
+
+
+    }
+
+    </script>
 </head>
 <body id="hob_page">
  <header>
         <figure><img src="Images/logo1.png" alt="a logo depicting jeff attride's initials "/></figure>
+        <img src="Images/burger.png" onclick="showmenu('flex','19em','none');"id="burger"/>
+        <img src="Images/grey_x.png" onclick="showmenu('none','5em','flex');"id="xicon"/>
 
 
-        <nav>
-            <ul>
+        <nav id="nv">
+            <ul id="menu">
 
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="edu.html">Education</a></li>
@@ -23,49 +37,49 @@
         </nav>
 
     </header>
-        <p><h1>My Hobbies</h1></p>
-        <section id = "muaythai">
-            <h1>Muaythai</h1><br />
-            <figure>
-                <img src="Images/Muaythai.jpg" alt="A picture of a muaythai fight">
-                <figcaption>A picture of a muaythai professional fight</figcaption>
-            </figure>
-            <p>
-                I have been doing Muaythai for 3 years in my local club, Muaythai is a Thai form of
-                kickboxing which uses all limbs in combat. It originated from military hand to hand
-                combat in the 18th century and is also know as "the art of eight-limbs". For more info,
-                <a href="https://en.wikipedia.org/wiki/Muay_Thai">click here.</a>
-            </p>
+    <p><h1>My Hobbies</h1></p>
+    <section id = "muaythai">
+        <h1>Muaythai</h1><br />
+        <figure>
+            <img src="Images/Muaythai.jpg" alt="A picture of a muaythai fight">
+            <figcaption>A picture of a muaythai professional fight</figcaption>
+        </figure>
+        <p>
+            I have been doing Muaythai for 3 years in my local club, Muaythai is a Thai form of
+            kickboxing which uses all limbs in combat. It originated from military hand to hand
+            combat in the 18th century and is also know as "the art of eight-limbs". For more info,
+            <a href="https://en.wikipedia.org/wiki/Muay_Thai">click here.</a>
+        </p>
 
 
-        </section>
-        <section id = "rock">
-            <h1>Rock-climbing</h1><br />
-            <figure>
-                <img src="Images/Rock_c.JPG" alt="A picture of me rock-climbing">
-                <figcaption>A picture of me rock-climbing in UCC</figcaption>
-            </figure>
-            <p>
-                I joined the Mountaineering society in UCC at the start of first year
-                and ever since I have been spending my time climbing at any spare moment
-                I get.
-            </p>
+    </section>
+    <section id = "rock">
+        <h1>Rock-climbing</h1><br />
+        <figure>
+            <img src="Images/Rock_c.JPG" alt="A picture of me rock-climbing">
+            <figcaption>A picture of me rock-climbing in UCC</figcaption>
+        </figure>
+        <p>
+            I joined the Mountaineering society in UCC at the start of first year
+            and ever since I have been spending my time climbing at any spare moment
+            I get.
+        </p>
 
-        </section>
-        <section id = "game">
-            <h1>Gaming</h1><br />
-            <figure>
-                <img src="Images/Desk-setup.JPG" alt="A picture of my gaming-setup">
-                <figcaption>Some of my favourite-games; Overwatch and Rust</figcaption>
-            </figure>
-            <p>
-                I regularly play games with my friends online, my favourite games are Overwatch, Rust
-                and Awesomenauts. I am a pc gamer as you can see from setup but my favourite platform
-                of all-time is the legendary PSP.
-            </p>
+    </section>
+    <section id = "game">
+        <h1>Gaming</h1><br />
+        <figure>
+            <img src="Images/Desk-setup.JPG" alt="A picture of my gaming-setup">
+            <figcaption>Some of my favourite-games; Overwatch and Rust</figcaption>
+        </figure>
+        <p>
+            I regularly play games with my friends online, my favourite games are Overwatch, Rust
+            and Awesomenauts. I am a pc gamer as you can see from setup but my favourite platform
+            of all-time is the legendary PSP.
+        </p>
 
 
-        </section>
+    </section>
 
 <footer></footer>
 

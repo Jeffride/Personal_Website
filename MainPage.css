@@ -3,11 +3,8 @@
     margin:0;
     padding:0;
 }
-
 body{
-    height:100%;
     width:100%;
-    max-width: 1024px;
     background-color: #000000;
     margin: 0 auto;
     display: grid;
@@ -153,20 +150,19 @@ aside{
 }
 #slideshow{
     grid-area: middle-right2;
-    width: 35em;
+    width: 500px;
     height: 350px;
-    margin:auto;
     border: solid white 2px;
     border-radius: 2em;
-    margin-top: 2em;
     overflow: hidden;
     padding: 0;
     animation: fade 1s linear;
+    max-width: 100%;
+    margin: auto;
 }
 #slideshow li{
     float: left;
     border-radius: 0;
-    z-index:0;
 }
 
 #holder{
@@ -189,7 +185,7 @@ aside{
 aside img img{
     padding-top: .2em;
 }
-nav ul{
+#menu{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -207,11 +203,6 @@ header a{
     align-items: center;
 
 }
-main ul{
-    font-size:2em;
-    margin-left:1.8em;
-    margin-bottom:1em;
-}
 header li{
     padding-top: 2em;
     list-style:none;
@@ -226,14 +217,21 @@ nav figure{
     padding-right: 185em;
     padding-left: 4em;
 }
+#burger{
+  display: none;
+}
+#xicon{
+  display: none;
+}
 #profile{
-    margin:auto;
     display: block;
     grid-area: middle-right;
     background-color: rgba(150,150,150, .5);
     font-size: 1.3em;
     margin-top: 4em;
     padding: 1em;
+    margin-left: 1em;
+    margin-right: 3em;
     border-radius: 1em;
     width:85%;
     color: white;
@@ -272,34 +270,62 @@ aside li{
     text-decoration: none;
     list-style: none;
 }
-@media screen and (max-width:1075px) {
+
+@media screen and (max-width:475px) {
+  #nv{
+    background-color: rgba(44,44,44, 1);
+    color: black;
+  }
 
     body{
         display: grid;
         grid-template-columns: 10% 90%;
         grid-template-rows: auto;
         grid-template-areas: "top top" "t2 t2" "middle middle""a1 a1" "b1 b1""bottom bottom";
-        margin: auto;
     }
+
+    #burger{
+      position: absolute;
+      right: 10%;
+      display: flex;
+      grid-area: top;
+      text-align: right;
+      max-width: 100%;
+      animation: none;
+
+
+    }
+    #xicon{
+      position: absolute;
+      right: 10%;
+      display: none;
+      grid-area: top;
+      text-align: right;
+      max-width: 100%;
+      animation: none;
+
+    }
+
     header{
         grid-area: top;
-        position: static;
+        position: fixed;
     }
     #profile{
         grid-area: t2;
-        margin: auto;
-        margin-top: 9em;}
+        margin:auto;
+        margin-top: 5em;
+      }
 
-    nav ul {
-        display: flex;
+    #menu {
+      color: black;
+        display: none;
         flex-direction: column;
         flex-wrap:wrap;
         overflow: visible;
         height: auto;
-        margin-left:5em;
-        align-items: center;
-        padding-left: 8em;
-
+        margin-left:25%;
+        align-items: flex-start;
+        padding-bottom: 2em;
 
 
     }
@@ -308,30 +334,87 @@ aside li{
     }
     #contact{
         grid-area:b1;
-        width:100%;
-        height: 10em;
+        width:90%;
+        height: 15em;
+        margin: auto;
         position: static;
-        padding: 0;
-        margin:0;
     }
     footer{
         grid-area: bottom;
     }
     #slideshow{
         grid-area: a1;
-        max-width:100%;
-        border-radius:0;
-        margin:auto;
-        margin-top:1em;
-        margin-bottom:1em;
+        width: 350px;
     }
-    #moon{
-    z-index: -6;
+    header li{
+      padding-top: 3em;
+    }
+
+
+
+
+
+
+
+
+
+
+    /*
+    #profile{
+
+        max-width: 50%;
+        height: auto;
+        grid-area:t2;
+        margin-top: 8em;
+    }
+    #slideshow{
+        grid-area: b1;
+    }
+    }
+    aside{
+        margin:auto;
+    }
+    #contact{
+        grid-area: t1;
+    }
+    footer{
+        grid-area: bottom;
+    }
+    /*nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+    }/*
+    li+li{
+        padding: 0.4em;
+    }
+    header li{
+        padding: 0.4em;
+    }
+    main{
+        margin-top: 1em;
+        display: block;
+        grid-area: middle;
+    }
+    aside {
+        margin-top: 1em;
+        display: block;
+        height: 8em;
+        width: 60%;
+    }
+
+    nav figure {
+        padding: 0;
     }
 }
+*/
 
 @keyframes spin {
-    from{transform: rotateY(0deg);}
+from{transform: rotateY(0deg);}
     to{transform: rotateY(360deg);}
 }
 

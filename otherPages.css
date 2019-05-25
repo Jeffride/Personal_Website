@@ -54,6 +54,9 @@ header{
 
 
 }
+#edu section{
+  margin-top: 7em;
+}
 #hob_page
 #edu section ul{
     margin-left: 2em;
@@ -157,7 +160,7 @@ section p {
 }
 /*Image slider*/
 .slider{
-    
+
     text-align: center;
     margin: auto;
     width:40em;
@@ -232,7 +235,7 @@ section p {
     color:white;
     grid-area: middle-right;
 }
-#hob_page section{
+#frst{
     margin:auto;
     margin-top: 2em;
     color: white;
@@ -244,19 +247,22 @@ section p {
     padding: 1em;
     grid-area: middle-left;
 }
-#hob_page #muaythai+section{
+#frst+section{
     grid-area: middle-middle;
 }
-#hob_page #game{
+#game{
     grid-area: middle-right;
 }
 #edu section{
-    margin-top:2em;
+    margin-top:7em;
 }
 #dogpage section li{
     list-style:none;
     margin:auto;
-    
+
+}
+#burger,#xicon{
+  display: none;
 }
 @media screen and (max-width: 80em){
     .slider{display:none;}
@@ -319,7 +325,7 @@ section p {
     }
     #edu section{
         grid-area: middle-left;
-        margin-top: 3em;
+        margin-top: 20em;
     }
     #hob_page #muaythai +section{
         grid-area: middle-right;
@@ -346,13 +352,13 @@ section p {
         grid-area:t1;
         margin-top:8em;
         text-align:center;
-    
+
     }
     #hob_page header~h1{
         grid-area:t1;
         margin-top:8em;
         text-align:center;
-        
+
     }
     #edu header+h1{
         grid-area:t1;
@@ -361,12 +367,12 @@ section p {
         color: white;
         margin:auto;
         margin-top:6em;
-        
+
     }
     #dogpage section{
         grid-area:m1;
         margin-top:2em;
-        
+
     }
     #dogpage section+section {
         grid-area:m2;
@@ -375,6 +381,9 @@ section p {
         grid-area:b1;
         width:50%;
     }
+
+
+
 }
 @media screen and  (max-width:50em) {
     #hob_page #rock + section{
@@ -389,7 +398,7 @@ section p {
         text-align:center;
     }
     #edu section{
-        margin-top:2em;
+        margin-top:4em;
     }
     #dogpage header~p+h1{
         grid-area:t1;
@@ -426,7 +435,7 @@ section p {
         margin-top:2em;
     }
     header{
-        position:static;
+        position:fixed;
     }
     .slider{
         height:20em;
@@ -465,13 +474,57 @@ section p {
 
     }
     #hob_page section{
-        margin-top: 2em;
+        margin-top: 4em;
         color: white;
         text-align: center;
         font-size: .8em;
     }
     #hob_page, #edu section~section{
         margin-top:2em;
+    }
+    #frst{
+      margin-top: 6em;
+    }
+    #menu {
+      color: black;
+        display: none;
+        flex-direction: column;
+        flex-wrap:wrap;
+        overflow: visible;
+        height: auto;
+        margin-left:25%;
+        align-items: flex-start;
+        padding-bottom: 2em;
+
+
+    }
+    #burger{
+      position: absolute;
+      right: 10%;
+      display: flex;
+      grid-area: top;
+      text-align: right;
+      max-width: 100%;
+      animation: none;
+
+
+    }
+    #xicon{
+      position: absolute;
+      right: 10%;
+      display: none;
+      grid-area: top;
+      text-align: right;
+      max-width: 100%;
+      animation: none;
+
+    }
+    #nv{
+      background-color: rgba(44,44,44, 1);
+      color: black;
+    }
+    #frst{
+      margin-top: 6em;
     }
 
 }
