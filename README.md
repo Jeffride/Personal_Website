@@ -6,7 +6,7 @@ A new website that incorporates media queries which improves accessibility for p
 ![screenshot3](https://user-images.githubusercontent.com/43136483/54752708-f9f24700-4bd6-11e9-8616-74aeab76ee7d.png)
 ![screenshot4](https://user-images.githubusercontent.com/43136483/54752717-fd85ce00-4bd6-11e9-9ec0-ae9eeb9a3475.png)
 
-25/5/19
+# 25/5/19
 ## new burger icon js dropdown menu for phone users
 ![phones](https://user-images.githubusercontent.com/43136483/58375409-4dbc3c00-7f4a-11e9-99fe-2d1b4a7cd09b.jpg)
 ![phones1](https://user-images.githubusercontent.com/43136483/58375411-514fc300-7f4a-11e9-825b-f4d63f5e8695.jpg)
